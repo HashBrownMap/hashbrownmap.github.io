@@ -93,7 +93,9 @@
 		a:hover {
 			border-color: transparent;
 		}
-
+	canvas{
+		display: block;
+	}
 /* Icon */
 
 	.icon {

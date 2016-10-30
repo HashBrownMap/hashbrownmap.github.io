@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Aerial by HTML5 UP</title>
+		<title>Tony Chen</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -17,20 +17,20 @@
 	<body class="loading">
 		<div id="wrapper">
 			<div id="bg"></div>
-			<div id="overlay"></div>
-			<div id="main">
+		
+			<div id="main" class="particles-js">
 
 				<!-- Header -->
-					<header id="header">
-						<h1>Adam Jensen</h1>
-						<p>Security Chief &nbsp;&bull;&nbsp; Cyborg &nbsp;&bull;&nbsp; Never asked for this</p>
+					<header id="header" >
+						<h1>Tony Chen</h1>
+						<!---<p>Security Chief &nbsp;&bull;&nbsp; Cyborg &nbsp;&bull;&nbsp; Never asked for this</p>-->
 						<nav>
 							<ul>
+								<li><a href=work/index.html class="icon fa-indent"><span class="label">Projects</span></a></li>
+								<li><a href="https://github.com/HashBrownMap" class="icon fa-github"><span class="label">Github</span></a></li>
+								<li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
 								<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-								<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
-								<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+								<li><a href="mailto:t.z.chen96@gmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
 							</ul>
 						</nav>
 					</header>
@@ -42,11 +42,14 @@
 
 			</div>
 		</div>
+			<canvas class=" sketch" height="260" width="955"></canvas>
 		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 		<script>
 			window.onload = function() { document.body.className = ''; }
 			window.ontouchmove = function() { return false; }
 			window.onorientationchange = function() { document.body.scrollTop = 0; }
 		</script>
+		<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js">
+		<script src="assets/js/app.js">
 	</body>
 </html>
