@@ -1,9 +1,5 @@
-@import '../libs/vars';
-@import '../libs/functions';
-@import '../libs/mixins';
-
 ///
-/// Lens by HTML5 UP
+/// Forty by HTML5 UP
 /// html5up.net | @ajlkn
 /// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
@@ -34,7 +30,7 @@
 			padding-left: 0;
 
 			li {
-				border-top: solid _size(border-width) _palette(border);
+				border-top: solid 1px _palette(border);
 				padding: 0.5em 0;
 
 				&:first-child {
@@ -56,11 +52,11 @@
 				&:last-child {
 					padding-right: 0;
 				}
+			}
 
-				.icon {
-					&:before {
-						font-size: 1.5rem;
-					}
+			@include breakpoint(small) {
+				li {
+					padding: 0 0.75em 0 0;
 				}
 			}
 		}
@@ -82,7 +78,7 @@
 
 			&.small {
 				li {
-					padding: 0 (_size(element-margin) * 0.25) 0 0;
+					padding: 0 (_size(element-margin) * 0.5) 0 0;
 				}
 			}
 
@@ -102,8 +98,6 @@
 
 				&.small {
 					li {
-						padding: (_size(element-margin) * 0.25) 0 0 0;
-
 						&:first-child {
 							padding-top: 0;
 						}
@@ -128,11 +122,11 @@
 				}
 
 				&.small {
-					margin-left: (_size(element-margin) * -0.25);
-					width: calc(100% + #{(_size(element-margin) * 0.25)});
+					margin-left: (_size(element-margin) * -0.5);
+					width: calc(100% + #{(_size(element-margin) * 0.5)});
 
 					li {
-						padding: 0 0 0 (_size(element-margin) * 0.25);
+						padding: 0 0 0 (_size(element-margin) * 0.5);
 					}
 				}
 			}
@@ -144,7 +138,7 @@
 
 		dt {
 			display: block;
-			font-weight: _font(weight);
+			font-weight: _font(weight-bold);
 			margin: 0 0 (_size(element-margin) * 0.5) 0;
 		}
 
