@@ -1967,7 +1967,7 @@
 			cursor: default;
 			list-style: none;
 			padding-left: 0;
-			
+			transform: translateY(50%);
 		
 		}
 
@@ -2936,7 +2936,7 @@
 					#header nav ul li a {
 						display: block;
 						position: relative;
-						height: 3em;
+						height: 1em;
 						line-height: 3em;
 						padding: 0 1.5em;
 						background-color: rgba(255, 255, 255, 0.5);
