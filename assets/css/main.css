@@ -1640,7 +1640,7 @@
 /* Type */
 
 	body, input, select, textarea {
-		color: #585858;
+		color: #3d3d3d;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 16pt;
 		font-weight: 300;
@@ -1678,6 +1678,12 @@
 			color: black !important;
 		}
 
+		.icons a {
+			border-bottom-color: transparent;
+			color: #797979 !important;
+		}
+		
+
 	strong, b {
 		font-weight: 900;
 	}
@@ -1711,7 +1717,23 @@
 
 		}
 
-		@media screen and (max-width: 360px) {
+		@media screen and (max-width: 420px) {
+			.link{
+				font-size: 3em !important;
+			}
+			.ic{
+				float:left !important;
+			}
+
+			.tiles{
+				width: 100%;
+			}
+
+
+			ul.icons li {
+				
+				padding: 0.08em 0.5em 0 0 !important;
+			}
 
 			h1 {
 				font-size: 1.75em;
@@ -1945,12 +1967,14 @@
 			cursor: default;
 			list-style: none;
 			padding-left: 0;
+			
 		
 		}
 
 			ul.icons li {
 				display: inline-block;
 				padding: 1em 0 0 1em;
+				
 			}
 
 		ul.actions {
@@ -2953,7 +2977,7 @@
 
 						#header nav ul li a[href="#menu"]:before {
 							background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 8px%3B stroke: %23f2849e%3B %7D%3C/style%3E%3Cline x1='0' y1='25' x2='100' y2='25' /%3E%3Cline x1='0' y1='50' x2='100' y2='50' /%3E%3Cline x1='0' y1='75' x2='100' y2='75' /%3E%3C/svg%3E");
-							opacity: 0;
+							opacity: 1;
 						}
 
 						#header nav ul li a[href="#menu"]:after {
@@ -2966,7 +2990,7 @@
 						}
 
 						#header nav ul li a[href="#menu"]:hover:after {
-							opacity: 0;
+							opacity: 1;
 						}
 
 		@media screen and (max-width: 736px) {
@@ -3113,7 +3137,7 @@
 
 			#menu > .close:before {
 				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 8px%3B stroke: %23f2849e%3B %7D%3C/style%3E%3Cline x1='15' y1='15' x2='85' y2='85' /%3E%3Cline x1='85' y1='15' x2='15' y2='85' /%3E%3C/svg%3E");
-				opacity: 0;
+				opacity: 1;
 			}
 
 			#menu > .close:after {
@@ -3126,7 +3150,7 @@
 			}
 
 			#menu > .close:hover:after {
-				opacity: 0;
+				opacity: 1;
 			}
 
 		@media screen and (max-width: 736px) {
@@ -3354,7 +3378,7 @@
 		width: 100%;
 		max-width: 68em;
 		margin: 0 auto;
-		padding: 0 2.5em;
+		padding: 0 5.5em;
 	}
 
 		@media screen and (max-width: 736px) {
@@ -3384,8 +3408,8 @@
 	text-decoration: none;
 	position: relative;
 	font-size: 5em;
-	line-height: 1;
-	color: #9e9ba4;
+
+	color: #797979;
 	display: inline-block;
 }
 
