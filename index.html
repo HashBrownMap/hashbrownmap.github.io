@@ -1,195 +1,110 @@
-<!DOCTYPE HTML>
+﻿<html>
+  <head>
+    <script src="https://unpkg.com/pts/dist/pts.min.js"></script>
+          <title>Tony Chen</title>
+          <meta charset="utf-8" />
+          <meta property="og:image" content="images/tc.png" />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <link rel="stylesheet" type="text/css" href="css/style.css">
+          <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+          <link rel="stylesheet" href="css/animate.css">
+          <meta name="description" content="Hey I'm Chris." />
+          <link href="https://fonts.googleapis.com/css?family=Lato:900,700,400,300" rel="stylesheet">
+          <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600" rel="stylesheet">
+          <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+        </head>
+      
+        <body style="font-family: sans-serif; margin: 0;">
+          <div id="pt" class="header container" style="width: 100%; height: 100%; margin-left: 180px">
+              <div id="wrapper" class="col-md-12">
+                <h1 class="animated fadeIn">TONY CHEN</h1>
+                <div class="animated fadeIn" id="smallDivider"></div>
+      
+                <h2 class="animated fadeIn">Data Science Intern at <b>Deloitte</b>.</h2>
+                <h2 class="animated fadeIn">Previously at <b>Datalogue</b>, <b>BlackBerry</b>, <b>TECTC</b>.</h2>
+                <ul class="socialMediaButtons">
+                  <li id="two" class="animated zoomInUp buttons hvr-grow2"><a href="resume.pdf" target="_blank" id="resume" class="hvr-grow"><img src="images/pdf.svg" height="25px" class="animated zoomIn"></a></li>                  
+                  <li id="three" class="animated zoomInUp buttons hvr-grow2"><a href="https://github.com/hashbrownmap" target="_blank"><img src="images/github.svg" height="26px"></a></li>
+                  <li id="four" class="animated zoomInUp buttons hvr-grow2"><a href="https://www.linkedin.com/in/tony-chen-08366b12a/" target="_blank"><img src="images/linkedin.svg" height="51px"></a></li>
+                </ul>
+            </div>
+          </div>
+          <div id="divider">
+          </div>
+      
+      
+        <script>
+          window.sr = ScrollReveal();
+          sr.reveal('.displayL', {
+            duration: 1400,
+            origin: 'left'
+          });
+      
+          sr.reveal('.displayR', {
+            duration: 1400,
+            origin: 'right'
+          });	
+        </script>
+    
+    
+    
+    <script>// Source code licensed under Apache License 2.0. 
+      // Copyright © 2017 William Ngan. (https://github.com/williamngan/pts)
 
-<html>
-	<head>
-		<meta property="og:image" content="images/tc.png" />
-		<link rel='shortcut icon' type='image/x-icon' href='images/tc.png' />
-		<title>Tony Chen</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/animate.css" />
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-	</head>
-	<body>
-		<!-- Wrapper -->
-			<div id="wrapper">
+      window.demoDescription = "A set of lines revolves around a center point. Each line's color depends on whether the pointer lies on its left or right side, and if it's collinear with the pointer.";
 
-				<!-- Header -->
-					<header id="header">
-						<div class="inner">
+      Pts.quickStart( "#pt", "white" );
 
-							<!-- Logo -->
-								<a href="index.html" class="logo">
-									<span class="symbol animated slideInDown"><img src="images/logo.svg" alt="" /></span><span class="title animated slideInDown" style="color:red">UNDER CONSTRUCTION</span>
-								</a>
+      //// Demo code starts (anonymous function wrapper is optional) ---
 
-							<!-- Nav -->
-								<nav>
-									<ul>
-										<li><a href="#menu">Menu</a></li>
-									</ul>
-								</nav>
+      (function() {
+        
+        var pairs = [];
 
-						</div>
-					</header>
+        space.add({ 
 
-				<!-- Menu -->
-					<nav id="menu">
-						<h2>Menu</h2>
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="generic.html">Resume</a></li>
-							<li><a href="generic.html">Blog</a></li>
-							<li><a href="generic.html">Contact</a></li>
-						</ul>
-					</nav>
+          start:( bound ) => {
+            let r = space.size.minValue().value/2;
 
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
-							<header class="animated slideInDown">
-								<div class="head">
-									<a class="link link--mallki" href="#">Tony Chen<span data-letters="Tony Chen"></span><span data-letters="Tony Chen"></span></a>
-									<ul class="icons profil ic">
-													<li><a href="https://github.com/HashBrownMap" class="icon style1 fa-github fa-2x" target="_blank"><span class="label">Github</span></a></li>
-													<li><a href="assets/theresume.pdf" class="icon style1 fa-file-text fa-2x" target="_blank"><span class="label">Twitter</span></a></li>
-													<li><a href="https://ca.linkedin.com/in/tony-chen-08366b12a" class="icon style1 fa-linkedin fa-2x" target="_blank"><span class="label">LinkedIn</span></a></li>
-													<li><a href="mailto:t.z.chen96@gmail.com" class="icon style1 fa-envelope fa-2x" target="_blank"><span class="label">Mail</span></a></li>
-													<li><a href="https://twitter.com/tzchen_" class="icon style1 fa-twitter fa-2x" target="_blank"><span class="label">Twitter</span></a></li>
-									</ul>
-								</div>
-								
-							</header>
-							<section class="tiles animated slideInUp"" >
-								<article class="style4">
-									<span class="image">
-										<img src="images/mate.jpg" alt="" />
-									</span>
-									<a href="band.html">
-										
-										<div class="content">
-											<h2>Mateband</h2>
-											<p>Smartband system to provide safety at large-scale events.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style4">
-									<span class="image">
-										<img src="images/bottle.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										
-										<div class="content">
-											<h2>Opinionator</h2>
-											<p>Reddit-like threads where users can catch and follow random threads but can reply once. Message in a bottle concept.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style4">
-									<span class="image">
-										<img src="images/twitterdev.png" alt="" />
-									</span>
-									<a href="generic.html">
-										
-										<div class="content">
-											<h2>askYP</h2>
-											<p>Twitter bot that replies to a certain hastag with fetched info from Yellow Pages API. Built with Python.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style4">
-									<span class="image">
-										<img src="images/futbattle.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										
-										<div class="content">
-											<h2>FUT Battle</h2>
-											<p>Player voting app for FIFA Ultimate Team. Built with MERN stack and Socket.IO.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style4">
-									<span class="image">
-										<img src="images/shower.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										
-										<div class="content">
-											<h2>Shower Dash</h2>
-											<p>Hacked an Amazon Dash to keep track of time spent in shower. Built with Python.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style4">
-									<span class="image">
-										<img src="images/book.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										
-										<div class="content">
-											<h2>Silent Executives</h2>
-											<p>Made landing page for a friend's book. Built with HTML, CSS.</p>
-										</div>
-									</a>
-								</article>
-								
-							</section>
-						</div>
-					</div>
+            // create 200 lines
+            for (let i=0; i<200; i++) {
+              let ln = new Group( Pt.make(2, r, true), Pt.make(2, -r, true) );
+              ln.moveBy( space.center ).rotate2D( i*Math.PI/200, space.center );
+              pairs.push(ln );
+            }
+          }, 
 
-				<!-- Footer 
-					<footer id="footer">
-						<div class="inner">
-							<section>
-								<h2>Get in touch</h2>
-								<form method="post" action="#">
-									<div class="field half first">
-										<input type="text" name="name" id="name" placeholder="Name" />
-									</div>
-									<div class="field half">
-										<input type="email" name="email" id="email" placeholder="Email" />
-									</div>
-									<div class="field">
-										<textarea name="message" id="message" placeholder="Message"></textarea>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send" class="special" /></li>
-									</ul>
-								</form>
-							</section>
-							<section>
-								<h2>Follow</h2>
-								<ul class="icons">
-									<li><a href="#" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon style2 fa-dribbble"><span class="label">Dribbble</span></a></li>
-									<li><a href="#" class="icon style2 fa-github"><span class="label">GitHub</span></a></li>
-									<li><a href="#" class="icon style2 fa-500px"><span class="label">500px</span></a></li>
-									<li><a href="#" class="icon style2 fa-phone"><span class="label">Phone</span></a></li>
-									<li><a href="#" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
-								</ul>
-							</section>
-							<ul class="copyright">
-								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
-					</footer> -->
+          animate: (time, ftime) => {
 
-			</div>
+            for (let i=0, len=pairs.length; i<len; i++) {
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
-		
-			<script src="assets/js/parallax.min.js"></script>
+              // rotate each line by 0.1 degree and check collinearity with pointer
+              let ln = pairs[i];
+              ln.rotate2D( Const.one_degree/10, space.center );
+              let collinear = Line.collinear( ln[0], ln[1], space.pointer, 0);
 
-	</body>
+              if (collinear) {
+                form.stroke("#fff").line(ln);
+
+              } else {
+                // if not collinear, color the line based on whether the pointer is on left or right side
+                let side = Line.sideOfPt2D( ln, space.pointer );
+                form.stroke( (side<0) ? "rgba(178,190,181,.3)" : "rgba(84,98,111,.3)" ).line( ln );
+              }
+              form.fillOnly("rgba(0,0,0,0.2").points( ln, 1.5);
+            }
+
+            form.fillOnly("#f03").point( space.pointer, 0, "circle");
+            
+          }
+
+        });
+        
+        //// ----
+        
+
+        space.bindMouse().bindTouch().play();
+
+      })();</script>
+    </body>
 </html>
