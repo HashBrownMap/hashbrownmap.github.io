@@ -4,6 +4,7 @@
           <title>Tony Chen</title>
           <meta charset="utf-8" />
           <meta property="og:image" content="images/tc.png" />
+          <link rel='shortcut icon' type='image/x-icon' href='images/tc.png' />	
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="stylesheet" type="text/css" href="css/style.css">
           <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -81,20 +82,20 @@
               // rotate each line by 0.1 degree and check collinearity with pointer
               let ln = pairs[i];
               ln.rotate2D( Const.one_degree/10, space.center );
-              let collinear = Line.collinear( ln[0], ln[1], space.pointer, 0);
+              let collinear = Line.collinear( ln[0], ln[1], space.pointer, 5);
 
               if (collinear) {
-                form.stroke("#fff").line(ln);
+                form.stroke("#FF8066").line(ln);
 
               } else {
                 // if not collinear, color the line based on whether the pointer is on left or right side
                 let side = Line.sideOfPt2D( ln, space.pointer );
                 form.stroke( (side<0) ? "rgba(178,190,181,.3)" : "rgba(84,98,111,.3)" ).line( ln );
               }
-              form.fillOnly("rgba(0,0,0,0.2").points( ln, 1.5);
+              form.fillOnly("rgba(0,0,0,0.2").points( ln, 3, "circle");
             }
 
-            form.fillOnly("#f03").point( space.pointer, 0, "circle");
+            form.fillOnly("#FF8066").point( space.pointer, 3, "circle");
             
           }
 
