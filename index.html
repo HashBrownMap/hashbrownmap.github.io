@@ -1,4 +1,5 @@
-﻿<html>
+﻿
+<html>
   <head>
     <script src="https://unpkg.com/pts/dist/pts.min.js"></script>
           <title>Tony Chen</title>
@@ -16,11 +17,11 @@
         </head>
       
         <body style="font-family: sans-serif; margin: 0;">
-            <div id="pt" class="header container"> </div>
+            <div id="pt" class="header container" style="background: transparent;"> </div>
             <div class="row">
 
               <div class="col-md-2"></div>
-              <div id="wrapper" class="col-md-10">
+              <div id="wrapper" class="col-md-10" style="z-index: -1">
                 <h1 class="animated fadeIn">TONY CHEN</h1>
                 <div class="animated fadeIn" id="smallDivider"></div>
       
@@ -58,7 +59,7 @@
 
       window.demoDescription = "A set of lines revolves around a center point. Each line's color depends on whether the pointer lies on its left or right side, and if it's collinear with the pointer.";
 
-      Pts.quickStart( "#pt", "white" );
+      Pts.quickStart( "#pt", "transparent" );
 
       //// Demo code starts (anonymous function wrapper is optional) ---
 
