@@ -1,5 +1,4 @@
-﻿
-<html>
+﻿<html>
   <head>
     <script src="https://unpkg.com/pts/dist/pts.min.js"></script>
           <title>Tony Chen</title>
@@ -21,16 +20,17 @@
             <div class="row">
 
               <div class="col-md-2"></div>
-              <div id="wrapper" class="col-md-10">
+              <div id="wrapper" class="col-md-5" style="z-index: 1">
                 <h1 class="animated fadeIn">TONY CHEN</h1>
                 <div class="animated fadeIn" id="smallDivider"></div>
       
-                <h2 class="animated fadeIn">Software Development Engineer at <b>Amazon</b>.</h2>
-                <h2 class="animated fadeIn">Previously at <b>Deloitte</b>, <b>Datalogue</b>, <b>BlackBerry</b>.</h2>
+                <h2 class="animated fadeIn">Software Development Engineer at <b>Amazon</b></h2>
+                <h2 class="animated fadeIn">Previously at <b>Deloitte</b>, <b>Datalogue</b>, <b>BlackBerry</b></h2>
+                <h2 class="animated fadeIn">Interests include ⚽ 🏂 👽🛸</b></h2>
                 <ul class="socialMediaButtons">
                   <li id="two" class="animated zoomInUp buttons hvr-grow2"><a href="resume.pdf" target="_blank" id="resume" class="hvr-grow"><img src="images/pdf.svg" height="25px" class="animated zoomIn"></a></li>                  
                   <li id="three" class="animated zoomInUp buttons hvr-grow2"><a href="https://github.com/hashbrownmap" target="_blank"><img src="images/github.svg" height="26px"></a></li>
-                  <li id="four" class="animated zoomInUp buttons hvr-grow2"><a href="https://www.linkedin.com/in/tony-chen-08366b12a/" target="_blank"><img src="images/linkedin.svg" height="51px"></a></li>
+                  <li id="four" class="animated zoomInUp buttons hvr-grow2"><a href="https://www.linkedin.com/in/donthire/" target="_blank"><img src="images/linkedin.svg" height="51px"></a></li>
                 </ul>
             </div>
 
@@ -64,6 +64,11 @@
       //// Demo code starts (anonymous function wrapper is optional) ---
 
       (function() {
+
+        if ((typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1)){
+          return;
+        }
+
         
         var pairs = [];
 
@@ -87,7 +92,7 @@
               // rotate each line by 0.1 degree and check collinearity with pointer
               let ln = pairs[i];
               ln.rotate2D( Const.one_degree/10, space.center );
-              let collinear = Line.collinear( ln[0], ln[1], space.pointer, 2);
+              let collinear = Line.collinear( ln[0], ln[1], space.pointer, 3);
 
               if (collinear) {
                 form.stroke("#FF8066").line(ln);
@@ -95,12 +100,12 @@
               } else {
                 // if not collinear, color the line based on whether the pointer is on left or right side
                 let side = Line.sideOfPt2D( ln, space.pointer );
-                form.stroke( (side<0) ? "rgba(178,190,181,.3)" : "rgba(84,98,111,.3)" ).line( ln );
+                form.stroke( (side<0) ? "rgba(207, 134, 255,.3)" : "rgba(84,98,111,.1)" ).line( ln );
               }
-              form.fillOnly("rgba(0,0,0,0.2").points( ln, 3, "circle");
+              form.fillOnly("rgba(0,0,0,0.1").points( ln, 3, "circle");
             }
 
-            form.fillOnly("#FF8066").point( space.pointer, 3, "circle");
+            form.fillOnly("#FF8066").point( space.pointer, 5, "circle");
             
           }
 

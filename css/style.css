@@ -161,10 +161,6 @@ ul {
 	text-align: right;
 }
 
-.row {
-	padding-bottom: 100px;
-}
-
 #rowOne {
 	padding-bottom: 120px !important;
 }
@@ -389,21 +385,21 @@ ul {
 }
 
 #two {
-	-webkit-animation-delay: .15s;
+	-webkit-animation-delay: .1s;
       /* Chrome, Safari, Opera */
-      animation-delay: .15s;
+      animation-delay: .1s;
 }
 
 #three {
-	-webkit-animation-delay: .30s;
+	-webkit-animation-delay: .2s;
       /* Chrome, Safari, Opera */
-      animation-delay: .30s;
+      animation-delay: .2s;
 }
 
 #four {
-	-webkit-animation-delay: .45s;
+	-webkit-animation-delay: .5s;
       /* Chrome, Safari, Opera */
-      animation-delay: .45s;
+      animation-delay: .5s;
 }
 
 #buds {
